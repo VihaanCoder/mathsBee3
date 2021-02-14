@@ -1,0 +1,12 @@
+body {
+    background:linear-gradient( red 0%,turquoise 100%);
+}
+
+#output{
+background:white;
+border-radius:10px;
+border-top:10px solid blue;
+padding:10px;
+float:none;
+text-align:justify;
+}
