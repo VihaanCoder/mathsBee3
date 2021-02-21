@@ -24,3 +24,39 @@ document.getElementById("output").innerHTML = row;
 
 document.getElementById("number1").value = "";
 document.getElementById("number2").value = "";
+
+question_turn ="playerRed";
+answer_turn = "playerBlue";
+
+function check(){
+
+    get_answer = document.getElementById("answer").value;
+    if(get_answer == actual_answer)
+
+    if(answer_turn == "playerRed"){
+
+    update_playerRed_score = playerRed_score + 1;
+    document.getElementById("player1_score").innerHTML = update_playerRed_score;}
+
+    else{
+
+        update_playerBlue_score = playerBlue_score + 1;
+    document.getElementById("player2_score").innerHTML = update_playerBlue_score;
+    }
+
+if(question_turn == "playerRed"){
+
+    question_turn = "playerBlue";
+    document.getElementById("player_question").innerHTML = "Question Turn -" + playerBlueName;
+}
+
+else
+{
+
+    question_turn = "playerRed";
+    document.getElementById("player_question").innerHTML = "Question Turn -" + playerRedName;
+}
+
+
+
+}
